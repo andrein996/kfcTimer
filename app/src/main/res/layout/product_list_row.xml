@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:clickable="false"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:cardUseCompatPadding="true"
+        card_view:cardPreventCornerOverlap="true"
+        style="@style/HistoryTabStyle">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                tools:text="Pulpe nepicante"
+                android:id="@+id/plr_tv_productName"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/white"
+                />
+
+            <TextView
+                tools:text="2C"
+                android:id="@+id/plr_tv_productQuantity"
+                android:layout_width="190dp"
+                android:textSize="24sp"
+                android:layout_below="@+id/plr_tv_productName"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                tools:text="234'"
+                android:id="@+id/plr_tv_productCountdown"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_toEndOf="@+id/plr_tv_productName"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                />
+
+            <ImageView
+                android:id="@+id/plr_btn_remove"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="55dp"
+                android:background="@drawable/ic_cancel_black_24dp"
+                android:layout_height="55dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

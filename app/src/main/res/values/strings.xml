@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">KFC Timer</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="piece">Buc</string>
+    <string name="choicePiece">B</string>
+    <string name="punga">Punga</string>
+    <string name="choicePunga">P</string>
+    <string name="add_product">Adauga cantitatea pentru produs</string>
+
+    <!-- Strings for snackbars -->
+    <string name="addedSnackBar">Am adaugat</string>
+    <string name="invalidQuantity">Cantitate invalida</string>
+
+    <!-- Strings for alerts -->
+    <string name="alertExpired">A expirat</string>
+    <string name="aboutToExpire">Urmeaza sa expire</string>
+    <string name="notificationTitle">KFC Time</string>
+    <string name="notificationTicker">Alert KFC</string>
+
+    <!-- String for products -->
+    <string name="pui">Pui</string>
+    <string name="filet_bites">Filet Bites</string>
+    <string name="file">File</string>
+    <string name="pulpe_nepicante">Pulpe nepicante</string>
+    <string name="pulpe_picante">Pulpe picante</string>
+    <string name="aripa">Aripa</string>
+    <string name="strips">Strips</string>
+    <string name="zinger">Zinger</string>
+    <string name="ou">Ou</string>
+    <string name="porumb">Porumb</string>
+    <string name="masa_rece">Masa Rece</string>
+    <string name="salate">Salate</string>
+    <string name="orez">Orez</string>
+
+</resources>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1027160749230",
+    "firebase_url": "https://kfc-timer.firebaseio.com",
+    "project_id": "kfc-timer",
+    "storage_bucket": "kfc-timer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027160749230:android:6ff905a4cae75134",
+        "android_client_info": {
+          "package_name": "co.zipperstudios.kfctimer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1027160749230-rhfa48gj5d7sc73acdq9uqqpkdnc85nu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQRow6eQmyWKMAa9hlk4JCyGtHoxTUKAE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

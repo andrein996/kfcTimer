@@ -1,0 +1,303 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fm_fl_layoutFrameMenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.zipperstudios.kfctimer.ui.MenuFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_weight="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:fillViewport="true"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="23dp"
+                        android:layout_below="@+id/textView4"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/linearLayout2">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:inputType="number"
+                                android:ems="10"
+                                android:maxLength="3"
+                                android:background="@drawable/fill_quantity_edittext"
+                                android:id="@+id/fm_et_editTextProduct"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:gravity="center"
+                                android:textSize="20sp"
+                                tools:text="213"/>
+                        </RelativeLayout>
+
+                        <RadioGroup
+                            android:id="@+id/fm_eg_radioGroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <RadioButton
+                                android:checked="true"
+                                android:text="@string/piece"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/fm_rb_cap"
+                                android:layout_weight="1"
+                                android:theme="@style/MyRadioButton"/>
+
+                            <Space
+                                android:layout_width="wrap_content"
+                                android:layout_height="6dp"
+                                android:layout_weight="1" />
+
+                            <RadioButton
+                                android:text="@string/punga"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/fm_rb_punga"
+                                android:layout_weight="1"
+                                android:theme="@style/MyRadioButton"/>
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:text="@string/add_product"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView4"
+                        android:textSize="22sp"
+                        android:textColor="@color/colorAddProductText"
+                        android:textStyle="bold|italic"
+                        android:layout_marginTop="28dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true">
+
+                        <Button
+                            android:id="@+id/buttonPui"
+                            android:text="@string/pui"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="addAlarmPui"
+                            android:background="@drawable/custom_menu_button"
+                            android:layout_margin="5dp"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"
+                            />
+
+                        <Button
+                            android:id="@+id/buttonFiletB"
+                            android:text="@string/filet_bites"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="addAlarmFiletB"
+                            android:background="@drawable/custom_menu_button"
+                            android:layout_margin="5dp"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"/>
+
+                        <Button
+                            android:id="@+id/buttonFile"
+                            android:text="@string/file"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="addAlarmFile"
+                            android:background="@drawable/custom_menu_button"
+                            android:layout_margin="5dp"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"/>
+
+                        <Button
+                            android:id="@+id/buttonPulpe"
+                            android:text="@string/pulpe_nepicante"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="addAlarmPulpe"
+                            android:background="@drawable/custom_menu_button"
+                            android:layout_margin="5dp"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"/>
+
+                        <Button
+                            android:id="@+id/buttonPulpeP"
+                            android:text="@string/pulpe_picante"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="addAlarmPulpeP"
+                            android:background="@drawable/custom_menu_button"
+                            android:layout_margin="5dp"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"/>
+
+                        <Button
+                            android:id="@+id/buttonAripa"
+                            android:text="@string/aripa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="addAlarmAripa"
+                            android:background="@drawable/custom_menu_button"
+                            android:layout_margin="5dp"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"/>
+
+                        <Button
+                            android:id="@+id/buttonStrips"
+                            android:text="@string/strips"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="addAlarmButtonStrips"
+                            android:background="@drawable/custom_menu_button"
+                            android:layout_margin="5dp"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"/>
+
+                        <Button
+                            android:id="@+id/buttonZinger"
+                            android:text="@string/zinger"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="addAlarmZinger"
+                            android:background="@drawable/custom_menu_button"
+                            android:layout_margin="5dp"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"/>
+
+                        <Button
+                            android:id="@+id/buttonOu"
+                            android:text="@string/ou"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="addAlarmOu"
+                            android:background="@drawable/custom_menu_button"
+                            android:layout_margin="5dp"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"/>
+
+                        <Button
+                            android:id="@+id/buttonPorumb"
+                            android:text="@string/porumb"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="addAlarmPorumb"
+                            android:background="@drawable/custom_menu_button"
+                            android:layout_margin="5dp"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"/>
+
+                        <Button
+                            android:id="@+id/buttonMasa"
+                            android:text="@string/masa_rece"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="addAlarmMasa"
+                            android:background="@drawable/custom_menu_button"
+                            android:layout_margin="5dp"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"/>
+
+                        <Button
+                            android:id="@+id/buttonSalate"
+                            android:text="@string/salate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="addAlarmSalate"
+                            android:background="@drawable/custom_menu_button"
+                            android:layout_margin="5dp"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"/>
+
+                        <Button
+                            android:id="@+id/buttonOrez"
+                            android:text="@string/orez"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="addAlarmOrez"
+                            android:background="@drawable/custom_menu_button"
+                            android:layout_margin="5dp"
+                            android:textStyle="bold"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textColor="@android:color/white"
+                            android:textSize="18sp"/>
+
+                        <Space
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

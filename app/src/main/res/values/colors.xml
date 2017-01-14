@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#363237</color>
+    <color name="colorPrimaryDark">#363237</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorExpireSoon">#cadb3e3e</color>
+    <color name="colorCountdown">#ffc907</color>
+    <color name="colorDeleteHistoryTab">#87d50000</color>
+    <color name="colorMenuButtons">#d4c62828</color>
+    <color name="colorBackground">#dad09683</color>
+    <color name="normalStateRadioButton">#4caf50</color>
+    <color name="activatedStateRadioButton">#c62828</color>
+    <color name="colorCardView">#f173605b</color>
+    <color name="colorAddProductText">#2D4262</color>
+</resources>
